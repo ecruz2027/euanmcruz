@@ -1,0 +1,363 @@
+ /*general*/
+        body {
+            background-image: url('images/bg.png');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        @font-face {
+            font-family: Hyperwave;
+            src: url(fonts/hyperwave-one-maisfontes.08db/hyperwave-one.ttf);
+        }
+
+        @font-face {
+            font-family: FLPro;
+            src: url(fonts/frutiger-lt-pro/Linotype\ \ FrutigerLTProBlack.otf);
+        }
+
+        @font-face {
+            font-family: Chonk;
+            src: url(fonts/chunkfive_ex/Chunkfive\ Ex.ttf);
+        }
+
+
+
+
+        /*navigate*/
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5);
+          }
+          
+          nav {
+            font-family: FLPro;
+            display: flex;
+            align-items: center;
+            padding-top: 40px;
+            padding-left: 10%;
+            padding-right: 10%;
+          }
+          
+          .navbar-brand {
+            color: white;
+            font-size: 20px;
+          }
+          
+          .cc {
+            color: #ffffff;
+          }
+          
+          nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 20px;
+          }
+          
+          nav ul li a {
+            color: #14FF00;
+            text-decoration: none;
+            transition: all 0.3s ease
+          }
+          
+          nav ul li a:hover {
+            background-color: transparent;
+            border: 2px solid#14FF00;
+            color: #15ff0049;
+            transition: .3s;
+            cursor: pointer
+          }
+
+
+
+        /*parallax*/
+        .wrapper {
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            perspective: 300px;
+            background-image: url('images/banner.png');
+        }
+
+            .intro_screen {
+                height: 100vh;
+                background-color: black;
+                transform: translateZ(-500px) scale(2.7);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .outro_screen {
+                height: 100vh;
+                transform: translateZ(-1080px) scale(4.6);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .parallax_group {
+                position: relative;
+                height: 100vh;
+                transform-style: preserve-3d;
+
+            }
+
+            .parallax_layer {
+                position: absolute;
+                inset: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .base_layer {
+                /* scale calculation: 1 + ((Z transform value * -1) / perspective) */
+                position: fixed;
+                background-size: cover;
+                transform: translateY(120rem) translateZ(-700px) scale(2.5);
+                z-index: 1;
+            }
+
+            .mid_layer {
+                transform: translateZ(0);
+            }
+
+            .top_layer {
+                transform: translateY(100rem) translateZ(0px) scale(2);
+            }
+        
+
+        #intro {
+            z-index: -10;
+        }
+
+        #group1 {
+            z-index: -1;
+        }
+
+        #group1>.mid_layer {
+            transform: translateY(160rem) translateZ(-1030px) scale(5);
+        }
+
+        #group2 {}
+
+        #group2>.mid_layer {
+            height: 600px;
+            background-color: rgba(183, 106, 255, 0);
+            transform: translateY(120rem) translateZ(-1020px) scale(4.4);
+        }
+
+        #group2>.top_layer {
+            background-color: rgba(183, 106, 255, 0);
+        }
+
+
+        #outro {
+            transform: translateZ(-1020px) scale(2.6);
+            position: fixed;
+            z-index: 400;
+        }
+
+
+        /*welcome*/
+        .wlcm {
+            margin-top: -25rem;
+        }
+
+        .wlcm1 {
+            padding-top: 90px;
+            background-color: black;
+            height: 2800px;
+            font-family: 'Franklin Gothic Heavy';
+            font-size: 20px;
+            color: white;
+            text-shadow: 2px 2px 5px black, 5px 5px 70px rgba(255, 255, 255, 0.614);
+            text-align: center;
+            transform: translateY(130rem);
+
+        }
+
+        .wlcm1 h4 {
+            font-family: Hyperwave;
+            font-size: 160px;
+            color: #14ff00;
+            text-shadow: 2px 2px 5px black, 5px 5px 70px;
+            text-align: center;
+
+        }
+
+        .wlcm1 p {
+            font-family: FLPro;
+            font-size: 25px;
+            padding: 5rem;
+            color: white;
+            text-shadow: 2px 2px 5px black, 5px 5px 70px;
+            text-align: center;
+        }
+
+        .wlcm2 {
+            padding-top: 90px;
+            background-color: black;
+            height: 1080px;
+            font-family: Chonk;
+            font-size: 20px;
+            color: white;
+            text-shadow: 2px 2px 5px black, 5px 5px 70px;
+            text-align: center;
+            transform: translateY(150rem);
+
+        }
+
+
+        /*card flips*/
+        .bodi {
+            margin: 0px;
+            padding: 20px;
+            min-height: 100vh;
+            background-color: #000000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .flip-card {
+            margin: 40px;
+            margin-right: 60px;
+            position: relative;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            border-radius: 20px;
+            /* box-shadow */
+            box-shadow: rgb(255, 255, 255) 0 0 50px;
+            border-color: #000000bd;
+            border-style: solid;
+            border-width: 30px;
+            width: 600px;
+            min-height: 600px;
+            height: auto;
+            background-color: rgb(38, 255, 0);
+            background-image: url(images/skincare.jpg);
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        }
+
+        .flip-card:nth-of-type(2) .flip-card-front,
+        .flip-card:nth-of-type(2) .flip-card-back {
+            background-image: url(images/clothing.jpg);
+        }
+
+        .flip-card:nth-of-type(3) .flip-card-front,
+        .flip-card:nth-of-type(3) .flip-card-back {
+            background-image: url(images/gym.jpg);
+        }
+
+        .flip-card:nth-of-type(4) .flip-card-front,
+        .flip-card:nth-of-type(4) .flip-card-back {
+            background-image: url(images/food.jpg);
+        }
+
+        .flip-card-front {
+            transform: rotateY(0deg);
+        }
+
+        .flip-card-back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front::after,
+        .flip-card-back::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: #0a0a0a;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.6;
+        }
+
+        .flip-card-front .inner,
+        .flip-card-back .inner {
+            width: 100%;
+            padding: 10px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) translateZ(60px) scale(0.8);
+            z-index: 2;
+        }
+
+        .inner {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+
+        .flip-card .inner h3 {
+            font-family: Chonk;
+            margin-bottom: 8px;
+            color: white;
+            font-size: 70px;
+            font-weight: 700;
+            line-height: 100px;
+            text-transform: capitalize;
+        }
+
+        .flip-card .inner p {
+            font-family: FLPro;
+            color: white;
+            font-size: 40px;
+            line-height: 40px;
+        }
+
+        .flip-card:hover .flip-card-front {
+            transform: rotateY(-180deg);
+        }
+
+        .flip-card:hover .flip-card-back {
+            transform: rotateY(0deg);
+        }
+
+        .card-text {
+            padding-top: 80px;
+            font-size: 5px;
+            background-color:#14FF00;
+            color: black;
+        }
+
+        /*button*/
+        .buttonn {
+            font-family: FLPro;
+            background-color: #14FF00;
+            color: rgb(0, 0, 0);
+            border: 2px solid transparent;
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 30px;
+            font-size: 17px;
+            font-weight: bold;
+          }
+          
+          .buttonn:hover {
+            transform: scale(1.2);
+            background-color: transparent;
+            border: 2px solid#14FF00;
+            color: #ffffff;
+            transition: .4s;
+            cursor: pointer
+          }

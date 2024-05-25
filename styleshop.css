@@ -1,0 +1,148 @@
+ nav {
+      font-family: FLPro;
+      display: flex;
+      align-items: center;
+      padding-top: 40px;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    .navbar-brand {
+      color: white;
+      font-size: 20px;
+    }
+
+    .cc {
+      color: #ffffff;
+    }
+
+    nav ul li {
+      list-style-type: none;
+      display: inline-block;
+      padding: 10px 20px;
+    }
+
+    nav ul li a {
+      color: #14FF00;
+      text-decoration: none;
+      transition: all 0.3s ease
+    }
+
+    nav ul li a:hover {
+      background-color: transparent;
+      border: 2px solid #14FF00;
+      color: #15ff0049;
+      transition: .3s;
+      cursor: pointer
+    }
+
+    
+    .card-deck {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      width: 18rem;
+      margin-bottom: 20px;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-body h5{
+        font-family: FLPro;
+    }
+
+    .card-body p{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .card-body .card-textt {
+        font-family: Chonk;
+        color:#14FF00;
+        font-size: 20px;
+    }
+
+    .card-body {
+      flex-grow: 1;
+
+    }
+
+    img {
+      width: 100%;
+      height: 18rem;
+    }
+
+    .card.shadow:hover {
+      transform: translateY(-5px);
+      transition: transform 0.2s ease-in;
+    }
+
+    /* Adjust the shadow size and color as needed */
+    .card.shadow:hover {
+      box-shadow: 0 0 10px rgb(20, 255, 0);
+    }
+
+    button:hover {
+      transform: scale(0.95);
+      background-color: transparent;
+      transition: .4s;
+      cursor: pointer
+    }
+
+    body {
+      background-image: url("images/bg.png");
+
+    }
+
+    h1 {
+      color: #14FF00;
+      background-color: rgba(0, 0, 0, 0.775);
+      font-family: Hyperwave;
+      text-shadow: 2px 2px 8px #2aff3c;
+      font-size: 100px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #14FF00;
+      font-family: FLpro;
+      text-shadow: 2px 2px 8px #2aff3c;
+      text-align: center;
+    }
+
+    @font-face {
+      font-family: Hyperwave;
+      src: url(fonts/hyperwave-one-maisfontes.08db/hyperwave-one.ttf);
+    }
+
+    @font-face {
+      font-family: FLPro;
+      src: url(fonts/frutiger-lt-pro/Linotype\ \ FrutigerLTProBlack.otf)
+    }
+
+
+    @font-face {
+      font-family: Chonk;
+      src: url(fonts/chunkfive_ex/Chunkfive\ Ex.ttf);
+    }
+
+    .form-control {
+      border-color: #14FF00;
+      box-shadow: 2px 2px 8px #2aff3c
+    }
+
+    footer {
+      width: 100%;
+    }
+
+    .list-group {
+      border-color: #14FF00;
+      box-shadow: 2px 2px 8px #2aff3c;
+    }
+
+    

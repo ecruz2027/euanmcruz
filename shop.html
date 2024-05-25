@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1fb48e9b87.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styleshop.css">
+  <title>Looksmaxxing: Shop</title>
+</head>
+
+<body>
+  <div class="whereu">
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: #14FF00;">LOOKS <span class="cc">MAXXING</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html" style="color: #14FF00;">The Crib</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html" style="color: #14FF00;">The Market</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutthecompany.html" style="color: #14FF00;">The Company</a>
+            </li>
+          </ul>
+          <div class="navbar-text">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                style="background-color: rgba(0, 0, 0, 0.233); color: #14FF00;">
+              <button class="btn btn-outline-success" type="submit" style="color: #14FF00;">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <h1>Skincare</h1>
+  <div class="container">
+    <div class="row mt-5 mx-auto">
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/guasha.jpeg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Gua Sha</h5>
+            <p class="card-text">Used to sculpt your face. </p>
+            <p class="card-textt">895 pesos</p>
+            <button class="mt-4 btn btn-md btn-light" onclick="addToCart('Gua Sha', 895)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/facewash.jpg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Face Wash</h5>
+            <p class="card-text">Cleans grime and dirt from your extreme activities.</p>
+            <p class="card-textt">289 pesos</p>
+            <button class="mt-4 btn btn-md btn-light" onclick="addToCart('Face Wash', 298)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/facemask.jpg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Face Mask</h5>
+            <p class="card-text">Refreshes and gives nutrients to your skin.</p>
+            <p class="card-textt">1409 pesos</p>
+            <button class="mt-4 btn btn-md btn-light" onclick="addToCart('Face Mask', 1409)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row md-4 mt-5 mx-auto">
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/toner.jpeg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Toner</h5>
+            <p class="card-text">Removes any dirt, dust or particles you have left on your face.</p>
+            <p class="card-textt">136 pesos</p>
+            <button class="mt-4 btn btn-md btn-light" onclick="addToCart('Toner', 136)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/moisturizer.jpg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Moisturizer</h5>
+            <p class="card-text">Moisturizes and gives your skin a plump, smooth feel.</p>
+            <p class="card-textt">109 pesos</p>
+            <button class="mt-4 btn btn-md btn-light" onclick="addToCart('Moisturizer', 109)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/cleanser.jpeg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Cleanser</h5>
+            <p class="card-text">Cleanses any grime and dirt. (might be the same as a face wash)</p>
+            <p class="card-textt">289 pesos</p>
+            <button class="mt-4 btn btn-md btn-light" onclick="addToCart('Cleanser', 289)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Gym equipment</h1>
+    <div class="row mt-5 mx-auto">
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/weightbench.jpeg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Weight Bench Press</h5>
+            <p class="card-text">Strengthens your upper body like chest and arms.</p>
+            <p class="card-textt">12675 pesos</p>
+            <button class="mt-4 btn btn-md btn-light" onclick="addToCart('Weight Bench Press', 12675)">Add to
+              Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/weights.jpg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Weights</h5>
+            <p class="card-text">Improves strength, mobility, and range of motion.</p>
+            <p class="card-textt">2615 pesos</p>
+            <button class="mt-4 btn btn-md btn-light" onclick="addToCart('Weights', 2615)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/resistancebands.jpg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Resistance Bands</h5>
+            <p class="card-text">Builds your muscles and strength</p>
+            <p class="card-textt">1269 pesos</p>
+            <button class="mt-4 btn btn-md btn-light" onclick="addToCart('Resistance Bands', 1269)">Add to
+              Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row mt-5 mx-auto">
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/pullupbar.jpg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Pull-Up Bar</h5>
+            <p class="card-text">Works your abs, chest, arms, and back muscles.</p>
+            <p class="card-textt">5669 pesos</p>
+            <button class="mt-4 btn btn-md btn-light" onclick="addToCart('Pull-Up Bar', 5669)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/gripstrengtheners.jpeg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Grip Strengtheners</h5>
+            <p class="card-text">Improves grip strength and dexterity</p>
+            <p class="card-textt">360 pesos</p>
+            <button class="mt-4 btn btn-md btn-light" onclick="addToCart('Grip Strengtheners', 360)">Add to
+              Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/dumbbells.jpeg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Dumbbells</h5>
+            <p class="card-text">They are for cardiovascular and core exercises.</p>
+            <p class="card-textt">15995 pesos</p>
+            <button class="mt-4 btn btn-md btn-light" onclick="addToCart('Dumbbells', 15995)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <h1>Clothing</h1>
+  <div class="container">
+    <div class="row mt-5 mx-auto">
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/10xlpants.jpeg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">10XL Pants</h5>
+            <p class="card-text">Pants to cater more of variety in people's sizes.</p>
+            <p class="card-textt">500 pesos</p>
+            <button class="mt-4 btn btn-md btn-light" onclick="addToCart('10XL Pants', 500)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/10xlshirt2.jpg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">10 XL Shirt</h5>
+            <p class="card-text">Shirt to cater more of variety in people's sizes.</p>
+            <p class="card-textt">569 pesos</p>
+            <button class="mt-4 btn btn-md btn-light" onclick="addToCart('10XL Shirt', 569)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/skinnyjeans.jpg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Skinny Jeans</h5>
+            <p class="card-text">Enhances physique of the lower half.</p>
+            <p class="card-textt">2699 pesos</p>
+            <button class="mt-4 btn btn-md btn-light" onclick="addToCart('Skinny Jeans', 2699)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row mt-5 mx-auto">
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/windbreaker.jpeg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Windbreaker</h5>
+            <p class="card-text">Can be used for running, gym exercises, and much more.</p>
+            <p class="card-textt">1649 pesos</p>
+            <button class="mt-4 btn btn-md btn-light" onclick="addToCart('Windbreaker', 1649)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/compressionshirt.jpeg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Compression Shirt</h5>
+            <p class="card-text">Enhances you upper body. Makes you 10x attractive.</p>
+            <p class="card-textt">685 pesos</p>
+            <button class="mt-4 btn btn-md btn-light" onclick="addToCart('Compression Shirt', 685)">Add to
+              Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/tanktop.jpeg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Tank Top</h5>
+            <p class="card-text">Can be used in versatile ways, never goes out of style.</p>
+            <p class="card-textt">399 pesos</p>
+            <button class="mt-4 btn btn-md btn-light" onclick="addToCart('Tank Top', 399)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1>Sigma meals</h1>
+  <div class="container">
+    <div class="row mt-5 mx-auto">
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/chocolatee.jpg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate Peanut Butter Shake with Greek Yogurt</h5>
+            <p class="card-text">Good for bulking and who wouldn't want chocolate and health at the same time?</p>
+            <p class="card-textt">230 pesos</p>
+            <button class="mt-4 btn btn-md btn-light"
+              onclick="addToCart('Chocolate Peanut Butter Shake with Greek Yogurt', 230)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/berry.jpeg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Triple Berry Smoothie with Egg Whites</h5>
+            <p class="card-text">Utilizes berries for antioxidants and egg whites for protein.</p>
+            <p class="card-textt">230 pesos</p>
+            <button class="mt-4 btn btn-md btn-light"
+              onclick="addToCart('Triple Berry Smoothie with Egg Whites', 230)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/greensmoothie.jpeg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Green Smoothie with Greek Yogurt</h5>
+            <p class="card-text">Good source of protein and vitamins.</p>
+            <p class="card-textt">230 pesos</p>
+            <button class="mt-4 btn btn-md btn-light" onclick="addToCart('Green Smoothie with Greek Yogurt', 230)">Add
+              to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row mt-5 mx-auto">
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/appleprotein.jpeg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Apple Cinnamon Hemp Heart Protein Smoothie</h5>
+            <p class="card-text">Delicious apple cinnamon treat with plenty of protein for muscle gain.</p>
+            <p class="card-textt">230 pesos</p>
+            <button class="mt-4 btn btn-md btn-light"
+              onclick="addToCart('Apple Cinnamon Hemp Heart Protein Smoothie', 230)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/strawbery.jpeg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Strawberry Banana Smoothie with Kefir</h5>
+            <p class="card-text">Delicious fruits and kefir for a source of many nutrients.</p>
+            <p class="card-textt">230 pesos</p>
+            <button class="mt-4 btn btn-md btn-light"
+              onclick="addToCart('Strawberry Banana Smoothie with Kefir', 230)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col mt-5">
+        <div class="card shadow text-white bg-dark" style="width: 18rem;">
+          <img src="images/blueberrytofu.jpeg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Blueberry Smoothie With Silken Tofu</h5>
+            <p class="card-text">High in antioxidants and protein, also very delicious.</p>
+            <p class="card-textt">230 pesos</p>
+            <button class="mt-4 btn btn-md btn-light"
+              onclick="addToCart('Blueberry Smoothie With Silken Tofu', 230)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class=custom-section style="background-color: black;">
+    <div class="container-fluid">
+      <div class="row details">
+        <div class="form-group">
+          <h2 class="mt-4">Profile/Delivery details</h2>
+          <ul id="cart-items" class="list-group"></ul>
+          <div class="mt-3 d-flex justify-content-between" style="color: #14FF00;">
+            <strong>Total Price: <span id="total-price">0</span> pesos</strong>
+          </div>
+        </div>
+        <form id="checkout-form" action="http://sirjm.infinityfreeapp.com/checkout.php" method="GET">
+          <div class="form-group">
+            <input type="text" class="form-control" name="cust_name" placeholder="Your Name" required><br>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="cust_addr" placeholder="Your Address" required><br>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" name="cust_email" placeholder="Your Email" required><br>
+          </div>
+          <input type="hidden" name="cust_order" id="cust_order_input">
+          <button type="submit" class="btn btn-success mb-3" onclick="prepareOrderData()">Checkout</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center text-white" style="background-color:#14FF00;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <div class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+        <!-- Github -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+      </div>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: #14FF00;">
+      © 2024 Copyright: Looksmaxxing website
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+  <!-- End of .container -->
+  <script>
+    let cart = [];
+
+    function addToCart(name, price) {
+      const item = { name, price };
+      cart.push(item);
+      renderCart();
+    }
+
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      renderCart();
+    }
+
+    function renderCart() {
+      const cartItems = document.getElementById('cart-items');
+      cartItems.innerHTML = '';
+      let totalPrice = 0;
+
+      cart.forEach((item, index) => {
+        const li = document.createElement('li');
+        li.className = 'list-group-item d-flex justify-content-between align-items-center';
+        li.innerHTML = `${item.name} - ${item.price} Php <button class="btn btn-danger btn-sm" onclick="removeFromCart(${index})">Remove</button>`;
+        cartItems.appendChild(li);
+        totalPrice += item.price;
+      });
+
+      document.getElementById('total-price').innerText = totalPrice;
+
+      const custOrderInput = document.getElementById('cust_order');
+      custOrderInput.value = JSON.stringify(cart);
+    }
+
+    function prepareOrderData() {
+      const custOrderInput = document.getElementById('cust_order_input');
+      const orderData = cart.map(item => ({ prod_name: item.name, prod_price: item.price }));
+      custOrderInput.value = JSON.stringify(orderData);
+    }
+  </script>
+
+</body>
+
+</html>
